@@ -1,0 +1,46 @@
+body{
+    margin: 0 auto;
+}
+.logo_container,.rule_container{
+    // width:1080px;
+    margin: 0 auto;
+    clear:both;
+}
+header{
+    min-height:60px;
+    padding: 10px;
+    background-color: rgb(222, 232, 232);
+    .logo{
+        width:238px;
+        float:left;
+    }
+    .logo_text{
+        float:left;
+        border-left: 2px solid rgb(44, 69, 116);
+        line-height: 45px;
+        margin: 0 0 0 15px;
+        padding: 0 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(44, 69, 116);
+    }
+}
+.clear{
+    clear: both;
+}
+.rule_container{
+    padding:10px 0px;
+    .rule_effect_label{
+        display:block;
+        color:blue;
+        font-weight:500;
+    }
+    .box{
+        border:1px solid #ccc;
+        border-radius:4px;
+        padding:45px 15px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap:wrap;
+    }
+}
