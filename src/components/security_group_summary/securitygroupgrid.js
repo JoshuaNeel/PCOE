@@ -12,7 +12,7 @@ export default function SecurityGroupGrid(){
     // Code to render the grid for security group
     return(
         <section className='table-responsive security_group_grid'>
-            <table className='table table-striped'>
+            <table className='table'>
                 <GridHeaders gridHeaders={gridHeaders} />
                 <GridData gridData={gridData} />
             </table>
