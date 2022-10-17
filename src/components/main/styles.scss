@@ -1,0 +1,66 @@
+
+.navItem{
+    background-color: #273e8a;
+    color: white;
+    width: 200px;
+    border-radius: 2px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+        .navIcons {
+            margin-top: 18px;
+            align-items: center;
+            max-width:32;
+        }
+        .dashboardTabs{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            text-align: center;
+            align-items: center;
+            font-size: 16px;
+            color: rgba(255,255,255,1);
+        }
+        #navigationButton{
+            align-items: center;
+            height: 94px;
+            border: 0;
+            background-color: #273e8a;
+            border-radius:0;
+            margin-top:-4px;
+            width: 200px;
+        }
+        #navigationButton:hover{
+            background-color:rgba(2,33,85,1);
+        }
+        #navigationButton:selected{
+            background-color:rgba(2,33,85,1);
+        }
+        Button:focus {
+            background-color: rgba(2,33,85,1);
+            box-shadow:none !important;
+        }
+        .activeBtn{
+            background-color: rgba(2,33,85,1) !important;
+        }
+}
+
+@media screen and (max-width: 400px) {
+    .navbarContainer{
+        height: 70;
+        margin-top: 0px;
+    }
+    .navItem{
+        height: 40;
+        .navIcons {
+            padding-top: -4px;
+            align-items: center;
+            max-width:20;
+            max-height: 10;
+        }
+        .dashboardTabs{
+            font-size: 12px;
+        }
+    }
+}

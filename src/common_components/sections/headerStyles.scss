@@ -1,0 +1,45 @@
+.boaIcon{
+    height: 230px;
+    margin-top: -80px;
+    margin-bottom: -80px;
+}
+.bofacontainer{
+    height: 100;
+    margin-top: 0;
+}
+.headerContainer{
+    background-color: transparent;
+}
+.headerRow{
+    margin-top: -8px;
+}
+
+.verticalBar{
+    align-items: right;
+    text-align: right;
+    justify-content: end;
+    border-right: 3px solid rgba(2,33,105,1);
+    
+}
+
+.pcoeText{
+    text-align: left;
+    font-family: Roboto;
+    justify-content: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    color: rgba(2,33,105,1);
+    margin-top: 20px;
+}
+@media screen and (max-width: 400px) {
+    .pcoeText{
+        font-size: 18px;
+    }
+    .verticalBar{
+        height: 50px;
+    }
+    .bofacontainer{
+        height: 80;
+    }
+}
