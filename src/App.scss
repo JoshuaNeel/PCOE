@@ -58,12 +58,17 @@ header{
     thead{
         background-color: rgba(234,239,250,1);
         color: rgba(47,47,47,1);
-    
-    }
-    td{
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
+    
+    }
+    td{
+    font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(118,118,118,1);
     }
 }
