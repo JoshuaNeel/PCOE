@@ -7,30 +7,35 @@ import DeleteIcon from '../../assets/images/table_cell_icons/Delete_Icon_2.png';
 import EditIcon from '../../assets/images/table_cell_icons/Edit_Icon.png';
 
 import ActionCell from "./actionCell";
+import GridCell from './gridCell';
 
 export default function GridData(props){
 
     const renderActionCell = ()=>{
         return(
-            <tr>
+            <td>
                 <ActionCell imagePath={CopyIcon} />
                 <ActionCell imagePath={EditIcon} />
                 <ActionCell imagePath={DeleteIcon} />
-            </tr>
+            </td>
         )
     }
+    const buildRow=(row, headers) =>{
+        return (
+             <tr key={row.id}>
+             { headers.map((value, index) => {
+                return <GridCell key={row['groupname']} row={row[value]} />
+              })}
+            {renderActionCell()}
+             </tr>
+         )
+      };
     return(
     <tbody>
-      {props.gridData.map((rowData,index) =>{
-       return(<tr key={index}>
-         {rowData.map((dataItem,dataIndex)=>{
-            return(<td key={`${index}_${dataIndex}`}>
-                {dataItem}
-            </td>);
-         })}
-         {renderActionCell()}
-       </tr>)
-      })}
+        { props.gridData && props.gridData.map((value) => {
+              return buildRow(value, props.dataFieldKeys);
+          })}
+
     </tbody>
     );
 }

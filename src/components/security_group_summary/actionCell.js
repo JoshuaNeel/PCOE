@@ -10,8 +10,6 @@ import ImageRender from "../../common_components/imageRender";
 export default function ActionCell(props){
 
     return(
-            <td>
-                <ImageRender sourcePath={props.imagePath} />
-            </td>
+        <ImageRender sourcePath={props.imagePath} />
     )
 }

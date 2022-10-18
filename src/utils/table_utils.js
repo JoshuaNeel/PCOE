@@ -27,7 +27,7 @@ export const SecurityGroupData={
     "data":[
         {
             "groupname":"on Hold CEF",
-            "countryToInclude":["US","UK","France"],
+            "countryToInclude":["US","UK","France","UK","France"],
             "l1-l2":"L1=1",
             "priceThreshold":"5",
             "productGroupToInclude":"22",
