@@ -6,15 +6,16 @@
 
 import GridData from './gridData';
 import GridHeaders from './gridHeaders';
-import {gridHeaders,gridData} from '../../utils/table_utils';
+import {gridHeaders,SecurityGroupData} from '../../utils/table_utils';
 
 export default function SecurityGroupGrid(){
     // Code to render the grid for security group
     return(
         <section className='table-responsive security_group_grid'>
-            <table className='table table-striped'>
+            <table className='table' id='securitygrouptable'>
                 <GridHeaders gridHeaders={gridHeaders} />
-                <GridData gridData={gridData} />
+                <GridData gridData={SecurityGroupData.data} 
+                          dataFieldKeys={Object.keys(SecurityGroupData.data[0])} />
             </table>
         </section>
     )

@@ -27,6 +27,9 @@ header{
 .clear{
     clear: both;
 }
+.security_group_grid{
+    margin: 50px;
+}
 .rule_container{
     padding:10px 0px;
     .rule_effect_label{
@@ -42,5 +45,25 @@ header{
         flex-direction: row;
         justify-content: space-around;
         flex-wrap:wrap;
+    }
+}
+.security_group_grid{
+
+    img{
+        margin-left: 10px;
+    }
+    table{
+        border: 1px solid rgba(234,239,250,1);
+    }
+    thead{
+        background-color: rgba(234,239,250,1);
+        color: rgba(47,47,47,1);
+    
+    }
+    td{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
     }
 }
