@@ -5,19 +5,6 @@ export const gridHeaders = ['Group Name','Country to Include','L1/L2',
                     'Price Threshold','Product Group to Include',
                     'Tickers to Include','Product Group to Exclude',
                     'Tickers to Exclude','Action'];
-export const gridData = [
-    ['test','test','test','test','test','test','test','test'],
-    ['test','test','test','test','test','test','test','test'],
-    ['test','test','test','test','test','test','test','test'],
-    ['test','test','test','test','test','test','test','test'],
-    ['test','test','test','test','test','test','test','test'],
-    ['test','test','test','test','test','test','test','test'],
-    ['test','test','test','test','test','test','test','test'],
-    ['test','test','test','test','test','test','test','test'],
-    ['test','test','test','test','test','test','test','test'],
-    ['test','test','test','test','test','test','test','test'],
-]
-
 
 /* Sample Schema for the security group grid
    data
@@ -27,7 +14,7 @@ export const SecurityGroupData={
     "data":[
         {
             "groupname":"on Hold CEF",
-            "countryToInclude":["US","UK","France","UK","France"],
+            "countryToInclude":["US","France","UK"],
             "l1-l2":"L1=1",
             "priceThreshold":"5",
             "productGroupToInclude":"22",
