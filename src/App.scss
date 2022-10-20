@@ -1,5 +1,6 @@
 body{
     margin: 0 auto;
+    background-color: rgba(241, 238, 238, 0.973) !important;
 }
 .logo_container,.rule_container{
     // width:1080px;
@@ -27,9 +28,6 @@ header{
 .clear{
     clear: both;
 }
-.security_group_grid{
-    margin: 50px;
-}
 .rule_container{
     padding:10px 0px;
     .rule_effect_label{
@@ -47,28 +45,4 @@ header{
         flex-wrap:wrap;
     }
 }
-.security_group_grid{
 
-    img{
-        margin-left: 10px;
-    }
-    table{
-        border: 1px solid rgba(234,239,250,1);
-    }
-    thead{
-        background-color: rgba(234,239,250,1);
-        color: rgba(47,47,47,1);
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-    
-    }
-    td{
-    font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	color: rgba(118,118,118,1);
-    }
-}

@@ -2,9 +2,9 @@
    related to the security
    group grid data
 */
-import CopyIcon from '../../assets/images/table_cell_icons/Copy_Icon.png';
-import DeleteIcon from '../../assets/images/table_cell_icons/Delete_Icon_2.png';
-import EditIcon from '../../assets/images/table_cell_icons/Edit_Icon.png';
+import CopyIcon from '../../../assets/images/table_cell_icons/Copy_Icon.png';
+import DeleteIcon from '../../../assets/images/table_cell_icons/Delete_Icon_2.png';
+import EditIcon from '../../../assets/images/table_cell_icons/Edit_Icon.png';
 
 import ActionCell from "./actionCell";
 import GridCell from './gridCell';
@@ -24,7 +24,8 @@ export default function GridData(props){
         return (
              <tr key={row.id}>
              { headers.map((value, index) => {
-                return <GridCell  row={row[value]} />
+                return <GridCell  row={row[value]} headerName={value}
+                rowDetails={row} />
               })}
             {renderActionCell()}
              </tr>
