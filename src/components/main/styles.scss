@@ -1,48 +1,51 @@
+$highlightColor: rgba(2,33,85);
+$whiteColor: rgba(255,255,255);
+$fontFamily: Roboto;
+$fontSize: 16px;
 
 .navItem{
-    background-color: #273e8a;
-    color: white;
-    width: 200px;
+    color: $whiteColor;
+    width: 235px;
     border-radius: 2px;
     text-align: center;
     justify-content: center;
     align-items: center;
     margin-left: 20px;
         .navIcons {
-            margin-top: 18px;
+            margin-top: 16px;
             align-items: center;
-            max-width:32;
         }
         .dashboardTabs{
-            font-family: Roboto;
+            font-family: $fontFamily;
             font-style: normal;
             font-weight: normal;
             text-align: center;
             align-items: center;
-            font-size: 16px;
-            color: rgba(255,255,255,1);
+            font-size: $fontSize;
+            color: $whiteColor;
+            padding-top: 3px;
         }
         #navigationButton{
             align-items: center;
-            height: 94px;
+            height: 90px;
             border: 0;
-            background-color: #273e8a;
+            background-color:transparent;
             border-radius:0;
-            margin-top:-4px;
-            width: 200px;
+            margin-top:-5px;
+            width: 235px;
         }
         #navigationButton:hover{
-            background-color:rgba(2,33,85,1);
+            background-color:$highlightColor;
         }
         #navigationButton:selected{
-            background-color:rgba(2,33,85,1);
+            background-color:$highlightColor;
         }
         Button:focus {
-            background-color: rgba(2,33,85,1);
+            background-color: $highlightColor;
             box-shadow:none !important;
         }
         .activeBtn{
-            background-color: rgba(2,33,85,1) !important;
+            background-color: $highlightColor !important;
         }
 }
 
