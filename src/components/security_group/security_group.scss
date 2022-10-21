@@ -1,0 +1,61 @@
+/*
+The file contains the
+styles for the
+security group defintion
+components
+*/
+.security_group_main_section{
+    margin: 15px;
+}
+.security_group_grid_main{
+    margin: 20px;
+}
+.grid_wrapper{
+    padding: 15px;
+}
+.security_group_grid_section_wrapper{
+    margin: 15px;
+}
+.security_group_grid{
+    overflow: auto;
+    height: 500px;
+    margin: 15px;
+
+    img{
+        margin-right: 10px;
+    }
+    table{
+        border: 1px solid rgba(234,239,250,1);
+    }
+    thead{
+        position: sticky; top: 0; z-index: 1
+    }
+    th{
+        color: rgba(47,47,47,1);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal !important;
+        font-size: 16px;
+    
+
+    }
+    td{
+    font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(118,118,118,1);
+    }
+
+}
+.security_group_grid::-webkit-scrollbar{
+    top: 10;
+    width: 10px;
+    border: 1px solid rgb(224, 221, 221);
+}
+.security_group_grid::-webkit-scrollbar-thumb{
+    background-color: rgba(26,78,119,1);
+    height: 30px;
+}
+
+  

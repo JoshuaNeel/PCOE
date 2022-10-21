@@ -9,6 +9,6 @@ export default function ImageRender(props){
     // from the parent component
 
     return(
-     <img src={props.sourcePath} alt='action cell' />
+     <img src={props.sourcePath} alt='action cell' style={props?.imageStyles} />
     )
 }

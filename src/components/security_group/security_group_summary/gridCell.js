@@ -4,13 +4,17 @@ code related to the
 grid cell rendering
 */
 
-import DotComponent from "../../common_components/dot";
+import DotComponent from "../../../common_components/dot";
+import { useSelector, useDispatch } from "react-redux"
+import { toggle_secuirty_component } from '../../../actions/rule_actions/actions';
+
 
 const valueWithDotsStyles = {
     display: 'flex',
     flexDirection: 'row'
 }
 export default function GridCell(props){
+  const dispatch = useDispatch();
 
     /* Method to return the cell data when the value
        is an multiple values
@@ -36,8 +40,20 @@ export default function GridCell(props){
             return cellValue;
         }
     }
+
+    const onGroupNameClick = ()=>{
+        dispatch(toggle_secuirty_component(true,props.rowDetails))
+    };
+    
     return(
-        <td >
+            <td
+            onClick={props.headerName === 'groupname'? onGroupNameClick: undefined}
+            style={props.headerName === 'groupname'?
+             {textDecoration:'underline',
+             cursor:'pointer',
+             color:'rgba(26,78,119,1)'}
+             : undefined}
+            >
             {displayCellValue()}
             </td>
     )

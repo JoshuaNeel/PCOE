@@ -9,7 +9,7 @@ import DashboardLogo from '../../assets/images/RoutingDashboardIcon.png';
 import GroupLogo from '../../assets/images/SecurityGroupIcon.png';
 import PartnerLogo from '../../assets/images/ProductSuitabilityIcon.png';
 import './styles.scss';
-import SecurityGroupGrid from '../security_group_summary/securitygroupgrid';
+import SecurityGroupMain from '../security_group/security_group_main';
 
 export default function PCOE_Main() {
   const navigate = useNavigate();
@@ -44,7 +44,7 @@ export default function PCOE_Main() {
       <Routes>
         <Route path="/routingDashboard" element={<RoutingDashboard />} />
         <Route path="/productSuitability" element={<ProductSuitability />} />
-        <Route path="/" element={<SecurityGroupGrid />} />
+        <Route path="/" element={<SecurityGroupMain />} />
         {/* <Route path="/" element={<SecurityGroupDefinition />} /> */}
       </Routes>
     </>
