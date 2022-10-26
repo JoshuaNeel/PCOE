@@ -24,8 +24,8 @@ export default function GridData(props){
         return (
              <tr key={row.id}>
              { headers.map((value, index) => {
-                return <GridCell  row={row[value]} headerName={value}
-                rowDetails={row} />
+                return <GridCell  row={row[value]} value={row} headerName={value}
+                rowDetails={row}/>
               })}
             {renderActionCell()}
              </tr>
