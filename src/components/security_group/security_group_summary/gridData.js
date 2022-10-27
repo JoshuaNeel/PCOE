@@ -27,7 +27,7 @@ export default function GridData(props){
                 return <GridCell  row={row[value]} headerName={value}
                 rowDetails={row} />
               })}
-            {renderActionCell()}
+            {props.actionButtons && renderActionCell()}
              </tr>
          )
       };

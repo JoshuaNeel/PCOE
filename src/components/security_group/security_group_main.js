@@ -3,7 +3,7 @@ The file contains the code related to
 the main layout for the
 security group definition screens
 */
-import {useSelector,useDispatch} from 'react-redux';
+import {useSelector} from 'react-redux';
 import GroupDetailsMain from './security_group_details/groupDetailsMain';
 import SecurityGroupGrid from './security_group_summary/securitygroupgrid';
 import './security_group.scss'
@@ -19,6 +19,7 @@ const heading_styles ={
     fontFamily: 'Roboto',
     fontStyle: 'normal',
     fontWeight: 'normal',
+    paddingLeft: '60px',
     fontSize: '22px'};
 
 export default function SecurityGroupMain(){

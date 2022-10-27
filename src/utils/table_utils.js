@@ -13,6 +13,30 @@ export const gridHeaders=[
     colSpan:1,
     headerStyle:{backgroundColor:'rgba(234,239,250,1)'},
    },
+    {headerName: 'Include',
+    rowSpan: 1,
+    colSpan:4,
+    headerStyle:{backgroundColor:'rgb(181,195,222)',textAlign:'center', borderRight:'1px solid #fff'},
+},
+    {headerName: 'Exclude',
+    rowSpan: 1,
+    colSpan:2,
+    headerStyle:{backgroundColor:'rgb(181,195,222)',textAlign:'center'},
+},
+{headerName: 'Count of Securities',
+rowSpan: 2,
+colSpan:1,
+headerStyle:{backgroundColor:'rgba(234,239,250,1)'},
+},
+
+    {headerName: 'Action',
+    rowSpan: 2,
+    colSpan:1,
+    headerStyle:{backgroundColor:'rgba(234,239,250,1)'},
+},
+
+]
+export const subHeaders = [
     {headerName: 'L1/L2',
     rowSpan: 2,
     colSpan:1,
@@ -23,24 +47,7 @@ export const gridHeaders=[
     colSpan:1,
     headerStyle:{backgroundColor:'rgba(234,239,250,1)'},
    },
-    {headerName: 'Include',
-    rowSpan: 1,
-    colSpan:2,
-    headerStyle:{backgroundColor:'rgb(181,195,222)',textAlign:'center'},
-},
-    {headerName: 'Exclude',
-    rowSpan: 1,
-    colSpan:2,
-    headerStyle:{backgroundColor:'rgb(181,195,222)',textAlign:'center'},
-},
-    {headerName: 'Action',
-    rowSpan: 2,
-    colSpan:1,
-    headerStyle:{backgroundColor:'rgba(234,239,250,1)'},
-},
 
-]
-export const subHeaders = [
     {headerName: 'Product Group',
     rowSpan: 1,
     colSpan:1,
@@ -60,9 +67,7 @@ export const subHeaders = [
     rowSpan: 1,
     colSpan:1,
     headerStyle:{backgroundColor:'rgba(234,239,250,1)'},
-},
-
-]
+}];
 
 /* Sample Schema for the security group grid
    data
@@ -78,807 +83,590 @@ export const SecurityGroupData={
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
         {
-            "groupname":"on Hold CEF",
+            "groupname":"group 1",
             "LOB":'CF2',
             "l1-l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
             "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
-        },
-        {
-            "groupname":"on Hold CEF",
-            "LOB":'CF2',
-            "l1-l2":"L1=1",
-            "countryToInclude":["US","France","UK"],
-            "productGroupToInclude":"22",
-            "tickersToInclude":["ABC","DEF"],
-            "productsToExclude":"18",
-            "tickersToExclude":["xyz","abd"]
+            "tickersToExclude":["xyz","abd"],
+            "countOfSecurities": 2
         },
     ]
 }
+
+/*
+Table headers for the
+security group details tickers
+table
+*/
+export const tickersDetailsHeaders=[
+    {headerName: 'Tickers',
+    rowSpan: 1,
+    colSpan:1,
+    headerStyle:{backgroundColor:'rgba(234,239,250,1)'},
+   },
+    {headerName: 'ISIN',
+    rowSpan: 1,
+    colSpan:1,
+    headerStyle:{backgroundColor:'rgba(234,239,250,1)'},
+   },
+    {headerName: 'CUSIP',
+    rowSpan: 1,
+    colSpan:1,
+    headerStyle:{backgroundColor:'rgba(234,239,250,1)'},
+   },
+    {headerName: 'ML Securities #',
+    rowSpan: 1,
+    colSpan:1,
+    headerStyle:{backgroundColor:'rgba(234,239,250,1)'},
+   },
+    {headerName: 'Security Type',
+    rowSpan: 1,
+    colSpan:1,
+    headerStyle:{backgroundColor:'rgba(234,239,250,1)'},
+   },
+    {headerName: 'Country of Listing',
+    rowSpan: 1,
+    colSpan:1,
+    headerStyle:{backgroundColor:'rgba(234,239,250,1)'},
+   }];
+   export const tickersViewData={
+    "data":[
+        {
+            "ticker":"MSFT",
+            "isin":'ABC1234',
+            "cusip":"74589625",
+            "ml_securities":"09879",
+            "security_type": ['equity','options'],
+            "country_listing": 'US'},
+        {
+            "ticker":"IBM",
+            "isin":'ABC1234',
+            "cusip":"74589625",
+            "ml_securities":"09879",
+            "security_type": ['equity','options'],
+            "country_listing": 'US'},
+        {
+            "ticker":"TSLA",
+            "isin":'ABC1234',
+            "cusip":"74589625",
+            "ml_securities":"09879",
+            "security_type": ['equity','options'],
+            "country_listing": 'US'},
+        {
+            "ticker":"QQQ",
+            "isin":'ABC1234',
+            "cusip":"74589625",
+            "ml_securities":"09879",
+            "security_type": ['equity','options'],
+            "country_listing": 'US'},
+        {
+            "ticker":"GOOG",
+            "isin":'ABC1234',
+            "cusip":"74589625",
+            "ml_securities":"09879",
+            "security_type": ['equity','options'],
+            "country_listing": 'US'},
+    ]
+};

@@ -6,21 +6,39 @@
 import {useSelector,useDispatch} from 'react-redux';
 import GridData from './gridData';
 import GridHeaders from './gridHeaders';
-import {gridHeaders,SecurityGroupData,
-    subHeaders} from '../../../utils/table_utils';
-import GroupDetailsMain from '../security_group_details/groupDetailsMain';
-import { security_group_grid_data } from '../../../actions/rule_actions/actions';
-import { useEffect, useMemo } from 'react';
+import { security_group_grid_data }
+from '../../../actions/security_group_actions/security_actions';
+import { useEffect, useState } from 'react';
 import GridWrapperSection from './gridWrapperSection';
 
   function SecurityGroupGridMethod(){
     // Code to render the grid for security group
     const dispatch = useDispatch();
     const securityGroupData = useSelector((state) => state.rule);
+    const [state,setState] = useState();
     useEffect(() => {
         dispatch(security_group_grid_data());
-    
+        setState({state:securityGroupData});
       },[]);
+     function consoleData(){
+        if(securityGroupData.hasOwnProperty('securityGridData')){
+
+          return(
+            <table className='table table-fixed' id='securitygrouptable'>
+                     <thead>
+  
+                      <GridHeaders gridHeaders={securityGroupData.securityGridData.gridHeaders}/>
+                      <GridHeaders gridHeaders={securityGroupData.securityGridData.subHeaders}/>
+                     </thead>
+                      <GridData gridData={securityGroupData.securityGridData.SecurityGroupData.data}
+                      actionButtons={true} 
+                              dataFieldKeys={
+                                Object.keys(
+                                  securityGroupData.securityGridData.SecurityGroupData.data[0])} />
+                  </table>
+          )
+        }
+      }
       // rendering the wrapper for the security group
       // summary section
     return(
@@ -29,12 +47,8 @@ import GridWrapperSection from './gridWrapperSection';
 
                 <GridWrapperSection />
                 <div className='table-responsive security_group_grid'>
-                <table className='table table-fixed' id='securitygrouptable'>
-                    <GridHeaders gridHeaders={gridHeaders}
-                    subHeaders={subHeaders} />
-                    <GridData gridData={SecurityGroupData.data} 
-                            dataFieldKeys={Object.keys(SecurityGroupData.data[0])} />
-                </table>
+                 {consoleData()}
+                
                 </div>
                 </div>
             </section>
