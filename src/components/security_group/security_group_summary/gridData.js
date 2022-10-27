@@ -13,7 +13,7 @@ export default function GridData(props){
 
     const renderActionCell = ()=>{
         return(
-            <td>
+            <td style={{ display: 'flex', justifyContent: 'space-between'}}>
                 <ActionCell imagePath={CopyIcon} />
                 <ActionCell imagePath={EditIcon} />
                 <ActionCell imagePath={DeleteIcon} />

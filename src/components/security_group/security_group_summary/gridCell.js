@@ -41,8 +41,9 @@ export default function GridCell(props){
         }
     }
 
-    const onGroupNameClick = ()=>{
-        dispatch(toggle_secuirty_component(true,props.rowDetails))
+    const onGroupNameClick =()=>{
+        dispatch(toggle_secuirty_component(true,props.rowDetails));
+
     };
     
     return(
@@ -51,8 +52,9 @@ export default function GridCell(props){
             style={props.headerName === 'groupname'?
              {textDecoration:'underline',
              cursor:'pointer',
+             position:'relative',
              color:'rgba(26,78,119,1)'}
-             : undefined}
+             : {position:'relative'}}
             >
             {displayCellValue()}
             </td>

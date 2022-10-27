@@ -4,10 +4,10 @@ $fontFamily: Roboto;
 .boaIcon{
     width: 397px;
     margin-top: 10px;
-    margin-right: 17px;
 }
 .bofacontainer{
     margin-top: 0;
+    margin-bottom:0;
 }
 .headerContainer{
     background-color: transparent;
@@ -17,6 +17,7 @@ $fontFamily: Roboto;
     align-items: right;
     text-align: right;
     justify-content: end;
+    margin-left: 14px;
     border-right: 3px solid $primaryCOlor;
     
 }

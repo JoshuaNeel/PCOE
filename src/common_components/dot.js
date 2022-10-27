@@ -9,15 +9,17 @@ import { ListGroupModal } from './listGroup';
 
 
 const borderPropertyForDots = {
-    borderBottom:' 4px dotted #000',
+    borderBottom:' 4px dotted rgba(2,33,105)',
     width: '16px',
-    marginBottom: '7px',
+    height: '16px',
     marginLeft: '3px',
-    marginBottom: '4px',
     borderTop: 0,
     borderLeft: 0,
     borderRight: 0,
-    backgroundColor: 'transparent'
+    backgroundColor: 'transparent',
+    boxShadow:'none',
+    position: 'relative'
+
 };
 export default function DotComponent({elementData}){
 
@@ -52,7 +54,7 @@ export default function DotComponent({elementData}){
     return(
         <>
             <button id='dots' style={borderPropertyForDots} onClick={() => setDialogOpen(!openDialog)}></button>
-            <section style={{ position: 'fixed', zIndex: 4, marginLeft: '4%', marginTop: '1.5%'}} ref={ref}>
+            <section style={{ position: 'absolute', zIndex: 2}} ref={ref}>
                 {openDialog && <ListGroupModal countries={countries} show={openDialog} close={(e) => handleClick(e)} />}
             </section>
         </>
