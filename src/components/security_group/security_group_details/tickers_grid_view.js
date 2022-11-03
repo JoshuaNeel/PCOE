@@ -44,7 +44,7 @@ const TickersGridViewComponent = (props) => {
         }
     }
     return (
-        <section className='card grid_wrapper'>
+        <section className=''>
 
             <div className='table-responsive tickers_grid'>
                 {

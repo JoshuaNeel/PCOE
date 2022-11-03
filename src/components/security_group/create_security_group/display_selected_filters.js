@@ -7,7 +7,7 @@ import {Filters_Selected} from '../../../utils/createGroup_utils';
 const DisplaySelectedFilters = (props) => {
 
     return (
-        <div className='row'>
+        <div>
                 <h2>Filters Selected</h2>
             <div className='filters_card_container'>
                 <div className='row'>
