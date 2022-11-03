@@ -2,7 +2,7 @@ import { DUMMY,SECURITY_GROUP_FLAG,
   SECURITY_GROUP_DATA,TICKERS_GRID_DATA } from "../../actions/actiontypes";
 
 const initialState = {
-  securityData:{flagOption: false}
+  securityData:{flagOption: 'security_summary_page',subHeadingTitle:''}
 };
 
 const rule_reducer = (state = initialState, action) => {

@@ -11,5 +11,5 @@ export default function GroupDetailsMain(props){
         <div className='security_group_grid1'>
           <TickersGridView />
         </div>
-    )
+    );
 }

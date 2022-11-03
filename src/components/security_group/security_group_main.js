@@ -8,6 +8,8 @@ import GroupDetailsMain from './security_group_details/groupDetailsMain';
 import SecurityGroupGrid from './security_group_summary/securitygroupgrid';
 import './security_group.scss'
 import HeadingElement from '../../common_components/heading_element';
+import AccordianComponent from '../../common_components/accordian';
+import CreateGroupMainComponent from './create_security_group/create_group_main';
 
 /*Creating a style object for the
 top header section element
@@ -29,12 +31,15 @@ export default function SecurityGroupMain(){
     // condition either to show the summary component
     // or to show the group details component
     const renderMainSection = ()=>{
-        if(securityGroupData.securityData.flagOption){
+        if(securityGroupData.securityData.flagOption === 'details_page'){
             return ( <GroupDetailsMain
                 rowData={securityGroupData.securityData.rowData} />);
         }
-        else{
+        else if(securityGroupData.securityData.flagOption === 'security_summary_page'){
             return (<SecurityGroupGrid />);
+        }
+        else{
+            return (<CreateGroupMainComponent />);
         }
     };
     
@@ -45,6 +50,7 @@ export default function SecurityGroupMain(){
                         header_text='Security Group Definition'
                         style_header={heading_styles} />
           {renderMainSection()}
+          
           </div>
         </section>
     )
