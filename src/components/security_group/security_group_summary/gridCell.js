@@ -5,7 +5,7 @@ grid cell rendering
 */
 
 import DotComponent from "../../../common_components/dot";
-import { useSelector, useDispatch } from "react-redux"
+import {  useDispatch } from "react-redux"
 import { toggle_secuirty_component }
  from '../../../actions/security_group_actions/security_actions';
 
@@ -42,9 +42,8 @@ export default function GridCell(props){
         }
     }
 
-    const onGroupNameClick =()=>{
-        dispatch(toggle_secuirty_component(true,props.rowDetails));
-
+    const onGroupNameClick = ()=>{
+        dispatch(toggle_secuirty_component('details_page',props.rowDetails,props.rowDetails.groupname))
     };
     
     return(

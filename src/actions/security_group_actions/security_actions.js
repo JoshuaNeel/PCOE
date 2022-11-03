@@ -6,8 +6,8 @@ import {gridHeaders,subHeaders,SecurityGroupData,
 component to display in security group
 definition
 */
-export const toggle_secuirty_component = (flagOption,rowData) => {
-    const payLoadObject = {flagOption,rowData}
+export const toggle_secuirty_component = (flagOption,rowData,subHeadingTitle) => {
+    const payLoadObject = {flagOption,rowData,subHeadingTitle}
     return function (dispatch, getState) {
         const state = getState();
         dispatch({

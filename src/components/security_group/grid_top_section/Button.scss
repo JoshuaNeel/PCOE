@@ -1,19 +1,23 @@
 button {
     position: absolute;
-    height: 25px;
+    height: 40px;
     align-items: center;
-    border-radius: 20% square;
-    cursor: pointer;
+    justify-content: center;
+    /* border-radius: 20% square; */
     font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
-    font-size: small;
-    margin-left:1rem;
-    background-color: rgb(35, 35, 226);
-    border-radius: 2px;
-    box-shadow: 0.5px 1px 1px 1px rgba(57, 91, 225, 0.5);
     color: white;
     border: none;
     outline: none;
   }
-  
+  .fa-plus{
+    font-display: thin;
+    box-sizing: initial;
+  }
+ .button_with_icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: pointer;
+ }
