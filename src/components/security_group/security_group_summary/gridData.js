@@ -13,7 +13,7 @@ export default function GridData(props){
 
     const renderActionCell = ()=>{
         return(
-            <td>
+            <td style={{ display: 'flex', justifyContent: 'space-between'}}>
                 <ActionCell imagePath={CopyIcon} />
                 <ActionCell imagePath={EditIcon} />
                 <ActionCell imagePath={DeleteIcon} />
@@ -24,8 +24,8 @@ export default function GridData(props){
         return (
              <tr key={row.id}>
              { headers.map((value, index) => {
-                return <GridCell  row={row[value]} headerName={value}
-                rowDetails={row} />
+                return <GridCell  row={row[value]} value={row} headerName={value}
+                rowDetails={row}/>
               })}
             {props.actionButtons && renderActionCell()}
              </tr>

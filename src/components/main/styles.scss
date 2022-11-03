@@ -6,11 +6,9 @@ $fontSize: 16px;
 .navItem{
     color: $whiteColor;
     width: 235px;
-    border-radius: 2px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
         .navIcons {
             margin-top: 16px;
             align-items: center;
@@ -27,22 +25,19 @@ $fontSize: 16px;
         }
         #navigationButton{
             align-items: center;
-            height: 90px;
+            height: 88px;
             border: 0;
             background-color:transparent;
             border-radius:0;
             margin-top:-5px;
+            box-shadow:none !important;
             width: 235px;
         }
         #navigationButton:hover{
             background-color:$highlightColor;
         }
-        #navigationButton:selected{
-            background-color:$highlightColor;
-        }
         Button:focus {
             background-color: $highlightColor;
-            box-shadow:none !important;
         }
         .activeBtn{
             background-color: $highlightColor !important;
