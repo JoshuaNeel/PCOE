@@ -20,8 +20,8 @@ export default function PCOE_Main() {
   return (
     <>
       <Header />
-        <Navbar className="navbarContainer" style={{ marginLeft: '2px', marginRight: '2px', backgroundColor: 'rgb(2, 33, 105)', height: 90, marginTop: '-9px' }}>
-          <Navbar.Brand className="navItem securityGroup" style={{height: 90, marginLeft: '90px'}} >
+        <Navbar className="navbarContainer" style={{ marginLeft: '2px', marginRight: '2px', backgroundColor: 'rgb(2, 33, 105)', height: 90, marginTop: '-20px' }}>
+          <Navbar.Brand className="navItem securityGroup" style={{height: 90}} >
             <Button id="navigationButton" className={activeButton === 1 && "activeBtn"} onClick={() => {navigate("/"); handleButtonClick(1);}}>
                 <img className="navIcons" src={GroupLogo} style={{height: 24, width:30}} />
                 <p className="dashboardTabs">Security Group Definition</p>

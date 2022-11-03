@@ -20,11 +20,11 @@ export default function GridCell(props){
     /* Method to return the cell data when the value
        is an multiple values
     */
-    const displayContentWithElipsis =(value)=>{
+    const displayContentWithElipsis =(value, rowData)=>{
         if(value.length> 2){
             return (<span style={valueWithDotsStyles}>
                 {value.slice(0,2).join(', ')}
-                <DotComponent/>
+                <DotComponent elementData={rowData}/>
                 </span>);
         }
         else{
@@ -35,15 +35,16 @@ export default function GridCell(props){
         const cellValue = props.row;
         if(Array.isArray(cellValue)){
             
-           return displayContentWithElipsis(cellValue);
+           return displayContentWithElipsis(cellValue, props.value);
         }
         else{
             return cellValue;
         }
     }
 
-    const onGroupNameClick = ()=>{
-        dispatch(toggle_secuirty_component(true,props.rowDetails))
+    const onGroupNameClick =()=>{
+        dispatch(toggle_secuirty_component(true,props.rowDetails));
+
     };
     
     return(
@@ -52,8 +53,9 @@ export default function GridCell(props){
             style={props.headerName === 'groupname'?
              {textDecoration:'underline',
              cursor:'pointer',
+             position:'relative',
              color:'rgba(26,78,119,1)'}
-             : undefined}
+             : {position:'relative'}}
             >
             {displayCellValue()}
             </td>
