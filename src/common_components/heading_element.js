@@ -5,11 +5,22 @@ the render the heading
 it's a reusable component
 */
 
-export default function HeadingElement(props){
+import { useSelector } from "react-redux";
 
+export default function HeadingElement(props){
+    const securityGroupName = useSelector((state) => state.rule);
+    console.log(securityGroupName);
+    const renderHeader = () =>{
+        if(securityGroupName !== undefined && securityGroupName.securityData?.rowData?.hasOwnProperty('groupname')){
+            return `${props.header_text} | ${securityGroupName.securityData?.rowData?.groupname}`;
+        }
+        else{
+           return props.header_text;
+        }
+    }
     return(
         <h2 style={props.style_header}>
-            {props.header_text}
+            {renderHeader()}
         </h2>
     )
 }

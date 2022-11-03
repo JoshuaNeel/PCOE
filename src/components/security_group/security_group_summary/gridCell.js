@@ -6,7 +6,8 @@ grid cell rendering
 
 import DotComponent from "../../../common_components/dot";
 import { useSelector, useDispatch } from "react-redux"
-import { toggle_secuirty_component } from '../../../actions/rule_actions/actions';
+import { toggle_secuirty_component }
+ from '../../../actions/security_group_actions/security_actions';
 
 
 const valueWithDotsStyles = {

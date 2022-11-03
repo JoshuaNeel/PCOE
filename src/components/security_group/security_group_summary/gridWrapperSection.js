@@ -13,9 +13,6 @@ export default function GridWrapperSection(){
     return(
         <div style={{display: 'flex',justifyContent:'space-between'}}>
          <Texts />
-         {/* <ImageRender sourcePath={ExcelIcon}
-          imageStyles={{height: '20px',width: '20px'}} /> */}
-
         </div>
     )
 }
