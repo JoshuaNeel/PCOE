@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./listGroupStyles.scss";
+import downloadImage from '../assets/images/download.png';
+import excelImage from '../assets/images/excel.png';
+
 var data = require("./MOCK_DATA.json");
 
 export default function TickerSearch() {
@@ -14,43 +17,23 @@ export default function TickerSearch() {
   const onSearch = (searchTerm) => {
     setValue(searchTerm);
     optionList.push(searchTerm);
-    console.log("search ", searchTerm);
   };
 
   const handleKeyUp = (e) => {
-		console.log(e.keyCode);
-		if (e.keyCode == 13) {
+		console.log(e.button);
+		if (e.keyCode == 13 || e.button == 0) {
 			setValues((oldState) => [...oldState, e.target.value]);
 			setValue("");
 		}
 	};
 
-  const handleDelete = ( item, index) =>{
-    let arr = [...values]
-    arr.splice(index,1)
-    console.log(item)
-    setValues(arr)
-  }
-
   return (
-    <main className="wrapper" style={{width: "500px"}}>
-      <section style={{display: 'flex', flexDirection: 'row'}} >
-        {values.map((item,index) => (
-          <section className="tag-item" key={item} >
-            {item}
-            <button style={{backgroundColor: 'transparent', color: 'grey', boxShadow: 'none'}}
-              type="button"
-              className="button"
-              onClick={() => handleDelete(item, index)}
-            >
-              &times;
-            </button>
-          </section>
-				))}
-        </section>
-        <section className="search-inner" style={{display: 'flex', flexDirection: 'row'}}>
-          <input type="text" value={value} placeholder="Search" onChange={onChange} onKeyDown={handleKeyUp} style={{ height: '25px', width: '300px', marginRight: '5px', border: '0px', boxShadow: 'none'}} />
-          {/* <button onClick={() => onSearch(value)}> Search </button> */}
+    <main className="wrapper">
+        <section className="search-inner">
+          <input type="text" value={value} placeholder="Search" onChange={onChange} onKeyDown={handleKeyUp} />
+          <img src={downloadImage} style={{height:'18px',width:'18px', padding: '2px'}}/>
+          <span style={{fontWeight: '2px', color: 'rgb(224, 221, 221)', marginLeft: '3px'}}>or</span>
+          <img src={excelImage} style={{height:'18px',width:'18px'}}/>
         </section>
         <section className="dropdown">
           {data
@@ -67,11 +50,12 @@ export default function TickerSearch() {
             .slice(0, 10)
             .map((item) => (
               <section
-                onClick={() => onSearch(item.full_name)}
                 className="dropdown-row"
+                style={{display: 'grid', marginLeft: '0px', paddingTop: '4px', boxShadow: 'grey'}}
+                onClick={() => onSearch(item.full_name)}
                 key={item.full_name}
               >
-                <h4>{item.group}</h4>
+                <p style={{backgroundColor: 'rgba(2,33,105,1)', fontWeight: 'bold'}}>{item.group}</p>
                 <p>{item.full_name}</p>
               </section>
             ))}
