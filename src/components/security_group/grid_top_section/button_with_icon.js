@@ -1,8 +1,8 @@
 import React from "react";
-import "./Button.scss";
+import "./button_with_icon.scss";
 import PlusImg from './plusIcons.png';
 
-const Button = ({label, buttonstyles, ClickEvent}) => {
+const ButtonWithIcon = ({label, buttonstyles, ClickEvent}) => {
   const handleButtonClick = (e) => {
     e.preventDefault();
   };
@@ -16,4 +16,4 @@ const Button = ({label, buttonstyles, ClickEvent}) => {
     </section>
   );
 };
-export default Button;
+export default ButtonWithIcon;

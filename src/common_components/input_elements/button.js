@@ -1,7 +1,9 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
-export default function ButtonComp() {
+export default function ButtonCompnent(props) {
   return (
-    <Button variant="outline-primary" style={{textTransform:"uppercase"}}>Create Group</Button>
+    <Button
+     style={props?.buttonStyles}
+     onClick={props.clickEvent}>{props.labelValue}</Button>
   )
 }

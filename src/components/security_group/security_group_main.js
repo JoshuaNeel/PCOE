@@ -4,11 +4,10 @@ the main layout for the
 security group definition screens
 */
 import {useSelector} from 'react-redux';
-import GroupDetailsMain from './security_group_details/groupDetailsMain';
-import SecurityGroupGrid from './security_group_summary/securitygroupgrid';
+import GroupDetailsMain from './security_group_details/group_details_main';
+import SecurityGroupGrid from './security_group_summary/security_group_grid';
 import './security_group.scss'
 import HeadingElement from '../../common_components/heading_element';
-import AccordianComponent from '../../common_components/accordian';
 import CreateGroupMainComponent from './create_security_group/create_group_main';
 
 /*Creating a style object for the

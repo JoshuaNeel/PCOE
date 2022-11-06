@@ -1,10 +1,11 @@
-import "./Text.scss";
+import "./search_button_wrapper.scss";
 import React, { useState } from "react";
 import {  useDispatch } from "react-redux"
 
-import Button from "./Button";
+import ButtonWithIcon from "./button_with_icon";
 import { toggle_secuirty_component }
  from '../../../actions/security_group_actions/security_actions';
+import SearchFieldComponent from "../../../common_components/input_elements/search_field";
 
 
 const defaultStyles= {
@@ -30,7 +31,7 @@ const buttonstyle = {
     outline: "none",
   };
   
-const Texts = ({label, buttonstyles, ClickEvent}) => {
+const SearchButtonWrapper = ({label, buttonstyles, ClickEvent}) => {
   const [text, settext] = useState("");
   const [defaultStyle,setInputStyles] = useState(true);
   const dispatch = useDispatch();
@@ -54,7 +55,7 @@ const createGroupHandler = (e)=>{
 }
   return (
     <section className="search-container search_container_wrapper" action="">
-    <input
+    {/* <input
         
         type="search"
         value={text}
@@ -62,12 +63,12 @@ const createGroupHandler = (e)=>{
         name="search"
         onChange={handleNameChange}
          style={defaultStyle? inputStyles: defaultStyles}
-      />
-
-    <Button buttonstyles={buttonstyle} label={'New Group'}
+      /> */}
+    <SearchFieldComponent/>
+    <ButtonWithIcon buttonstyles={buttonstyle} label={'New Group'}
        ClickEvent={(e)=>createGroupHandler(e)}/>
 
     </section>
   );
 };
-export default Texts;
+export default SearchButtonWrapper;

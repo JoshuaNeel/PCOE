@@ -1,17 +1,18 @@
 
 import React, { useState } from "react";
+import { useDispatch,useSelector } from "react-redux";
 import { Accordion, Card } from "react-bootstrap";
-import {MultiSelectBox} from './multiSelectCheckbox';
-import {RadioButton} from './radioButton';
+import {MultiSelectBox} from './multi_select_checkbox';
+import {RadioButton} from './radio_button';
 import {l1_l2, countryOfOrigin, PMEGroup, productGroupToInclude, productGroupToExclude,
   securitiesToInclude,
   securitiesToExclude,
-  optionInclusion, marginability} from './filtersData';
+  optionInclusion, marginability} from './filters_data';
 import TickerSearch from './TickerSearch';
-  
+import {create_group_filter_selection}
+ from '../actions/security_group_actions/security_actions';
 
 function CustomToggle({ children, handleClick }) {
-
   return (
     <div className="card-header" type="button" onClick={handleClick}>
       {children}
@@ -20,6 +21,15 @@ function CustomToggle({ children, handleClick }) {
 }
 
 const Accordian = () => {
+  /*
+  Fetching the filtersdata from the
+  redux store
+  */
+  const filterReduxState = useSelector((state) => state);
+  let filterStateObject = filterReduxState?.security_reducers?.filtersData?.filterSelectedData;
+  const dispatch = useDispatch();
+  console.log(filterStateObject);
+  // dispatch(create_group_filter_selection({pme:[]}));
   const [activeKey, setActiveKey] = useState(0);
   const data = [
     { name: "L1/L2", values: l1_l2 },
@@ -48,6 +58,17 @@ const Accordian = () => {
     const item = e.target.name;
     const isChecked = e.target.checked;
     setCheckedItems(new Map(checkedItems.set(item, isChecked)));
+    let pmeArray = filterStateObject?.pme? filterStateObject?.pme:[];
+    if(pmeArray.indexOf(item) === -1 && isChecked) {
+      pmeArray.push(item);
+   }
+    for (const item in filterStateObject) {
+      filterStateObject[item] = pmeArray
+    }
+    
+    console.log(filterStateObject)
+    dispatch(create_group_filter_selection(filterStateObject));
+
   }
 
   const handleProductGroupToInclude = (e) => {

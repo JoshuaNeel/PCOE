@@ -45,7 +45,7 @@ export default function GridCell(props){
     const onGroupNameClick = ()=>{
         dispatch(toggle_secuirty_component('details_page',props.rowDetails,props.rowDetails.groupname))
     };
-    
+
     return(
             <td
             onClick={props.headerName === 'groupname'? onGroupNameClick: undefined}

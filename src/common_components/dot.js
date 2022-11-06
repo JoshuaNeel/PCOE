@@ -5,7 +5,7 @@ dot component
 */
 
 import React, {useState, useRef, useCallback, useEffect} from "react";
-import { ListGroupModal } from './listGroup';
+import { ListGroupModal } from './list_group';
 
 
 const borderPropertyForDots = {

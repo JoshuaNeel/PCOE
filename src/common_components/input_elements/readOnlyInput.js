@@ -8,11 +8,11 @@ other components
 
 const ReadOnlyInput = (props) =>{
     return(
-        <>
+        <div className='col-6'>
          <label>{props.labelValue}</label>
         <input type='text' value={props.displayValue}
-         readOnly className="col-12 readonlyInput"/>
-        </>
+         readOnly className="readonlyInput col-12"/>
+        </div>
     );
 };
 
