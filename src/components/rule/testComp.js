@@ -5,7 +5,6 @@ const TestComp = () => {
     const state = useSelector((state) => state);
     const dispatch = useDispatch();
     dispatch(fetch_dummy_data())
-    console.log(state)
     return (
         <div>
             <h1>React App</h1>

@@ -13,7 +13,7 @@ import {tickers_view_grid_data}
 from '../../../actions/security_group_actions/security_actions';
 
 const TickersGridViewComponent = (props) => {
-    const securityGroupData = useSelector((state) => state.rule);
+    const securityGroupData = useSelector((state) => state.security_reducers);
     const dispatch = useDispatch();
 
     useEffect(() => {

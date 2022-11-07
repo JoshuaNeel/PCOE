@@ -32,7 +32,6 @@ export default function GridHeaders(props) {
           (sortOrder === "asc" ? 1 : -1)
         );
       });
-      console.log(sorted);
       // setTableData(sorted);
     }
   };

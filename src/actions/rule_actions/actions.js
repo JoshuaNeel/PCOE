@@ -5,7 +5,6 @@ export const fetch_dummy_data = () => {
         fetch('https://jsonplaceholder.typicode.com/todos/1')
             .then(response => response.json())
             .then(json => {
-                console.log(json)
                 dispatch(load_data(json))
             })
 

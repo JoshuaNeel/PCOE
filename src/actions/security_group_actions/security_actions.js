@@ -51,8 +51,8 @@ export const tickers_view_grid_data = () => {
 /*Action to maintain the data
 for the create group filter selection display
 */
-export const create_group_filter_selection = (filtersSelected) => {
-    const filtersPayload ={filtersSelected}
+export const create_group_filter_selection = (filtersSelectedData) => {
+    const filtersPayload ={filtersSelectedData}
     return function (dispatch, getState) {
         const state = getState();
         dispatch({

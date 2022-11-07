@@ -20,7 +20,6 @@ export default function TickerSearch() {
   };
 
   const handleKeyUp = (e) => {
-		console.log(e.button);
 		if (e.keyCode == 13 || e.button == 0) {
 			setValues((oldState) => [...oldState, e.target.value]);
 			setValue("");
