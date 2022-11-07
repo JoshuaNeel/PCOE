@@ -5,7 +5,7 @@ action buttons in the
 grid cell
 */
 
-import ImageRender from "../../../common_components/imageRender";
+import ImageRender from "../../../common_components/image_render";
 
 export default function ActionCell(props){
 

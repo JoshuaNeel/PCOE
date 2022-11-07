@@ -4,15 +4,14 @@ the code related to the
 top section of the security
 group grid
 */
-import ImageRender from '../../../common_components/imageRender';
 
-import Texts from "../grid_top_section/Texts";
+import SearchButtonWrapper from "../grid_top_section/search_button_wrapper";
 
 export default function GridWrapperSection(){
 
     return(
         <div style={{display: 'flex',justifyContent:'space-between'}}>
-         <Texts />
+         <SearchButtonWrapper />
         </div>
     )
 }

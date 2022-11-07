@@ -9,7 +9,8 @@ const TextField = (props) =>{
         <div>
              <label>Group Name</label>
             <input type='text' className="col-12"
-            placeholder="Enter Group Name" />
+            placeholder={props.placeholder}
+            style={props.inputStyle} />
         </div>
     );
 };

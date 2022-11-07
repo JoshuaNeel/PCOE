@@ -59,6 +59,10 @@ header{
         padding-left: 0px;
     }
 }
+.filters_card_wrapper{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .filters_card_container{
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -77,10 +81,50 @@ select{
     border-radius: 5px;
     height: 35px;
 }
-input{
-    height: 35px;
-    border: 1px solid #eceaea;
-    box-shadow: none;
-    border-radius: 5px;
+// input[text]{
+//     height: 35px;
+//     border: 1px solid #eceaea;
+//     box-shadow: none;
+//     border-radius: 5px;
 
+// }
+// th{ 
+//     position: relative;
+//   }
+
+.input_view_flex{
+    display: flex;
+    justify-content: space-between;
+}
+.input_view_wrapper{
+    padding-left:2.6%;
+    padding-right:2.6%;
+
+}
+.input_field_view_wrapper input{
+        height:40px;
+        border: 1px solid #eceaea;
+        box-shadow: none;
+        border-radius: 5px;
+    
+    }
+.create_group_wrapper .tickers_grid{
+    margin: 15px 15px 15px 0px;
+}
+.custom-search-bar{
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-right: none !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+.search-icon-wrapper{
+    border: 1px solid #ced4da;
+    border-left: none;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+.custom-search-bar:focus{
+    box-shadow: none !important;
+    border-color: #ced4da !important;
 }

@@ -7,12 +7,10 @@ component
 */
 import {useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
-import GridData from '../security_group_summary/gridData';
-import GridHeaders from '../security_group_summary/gridHeaders';
+import GridData from '../security_group_summary/grid_data';
+import GridHeaders from '../security_group_summary/grid_headers';
 import {tickers_view_grid_data} 
 from '../../../actions/security_group_actions/security_actions';
-import DropDownComponent from
- '../../../common_components/input_elements/dropdown';
 
 const TickersGridViewComponent = (props) => {
     const securityGroupData = useSelector((state) => state.rule);
@@ -29,9 +27,12 @@ const TickersGridViewComponent = (props) => {
                     <thead>
                         <GridHeaders gridHeaders={
                             securityGroupData.tickersData.tickersDetailsHeaders
-                        }/>
+                        }
+                        isCheckbox={props.isCheckbox} />
                     </thead>
-                    <GridData gridData={
+                    <GridData
+                    isCheckbox={props.isCheckbox}
+                    gridData={
                             securityGroupData.tickersData.tickersViewData.data
                         }
                         actionButtons={false}
@@ -50,7 +51,6 @@ const TickersGridViewComponent = (props) => {
                 {
                 renderGrid()
             } </div>
-            <DropDownComponent/>
         </section>
 
     );

@@ -28,12 +28,25 @@ export default function TickerSearch() {
 	};
 
   return (
-    <main className="wrapper">
-        <section className="search-inner">
-          <input type="text" value={value} placeholder="Search" onChange={onChange} onKeyDown={handleKeyUp} />
-          <img src={downloadImage} style={{height:'18px',width:'18px', padding: '2px'}}/>
-          <span style={{fontWeight: '2px', color: 'rgb(224, 221, 221)', marginLeft: '3px'}}>or</span>
-          <img src={excelImage} style={{height:'18px',width:'18px'}}/>
+    <main className="wrapper" style={{width: "500px"}}>
+      <section style={{display: 'flex', flexDirection: 'row'}} >
+        {values.map((item,index) => (
+          <section className="tag-item" key={item} >
+            {item}
+            <button style={{backgroundColor: 'transparent', color: 'grey', boxShadow: 'none'}}
+              type="button"
+              className="button"
+              onClick={() => handleDelete(item, index)}
+            >
+              &times;
+            </button>
+          </section>
+				))}
+        </section>
+        <section className="search-inner" style={{display: 'flex', flexDirection: 'row'}}>
+          <input type="text" value={value} placeholder="Search" onChange={onChange}
+           onKeyDown={handleKeyUp} style={{ height: '25px', width: '300px', marginRight: '5px', border: '0px', boxShadow: 'none'}} />
+          {/* <button onClick={() => onSearch(value)}> Search </button> */}
         </section>
         <section className="dropdown">
           {data
