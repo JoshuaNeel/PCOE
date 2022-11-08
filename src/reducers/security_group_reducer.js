@@ -5,7 +5,18 @@ import { SECURITY_GROUP_FLAG,
   const initialState = {
     securityData:{flagOption: 'security_summary_page',subHeadingTitle:'',
   },
-  filtersData:{filterSelectedData:{pme:[]}}
+  filtersData:{filtersSelectedData:{
+    groupname:'',
+    lob:'',
+    l1l2:[],
+    countryoforigin:[],
+    prdctExclude:[],
+    prdctInclude:[],
+    securityInclude:[],
+    securityExclude:[],
+    optionInclusion:'',
+    marginability:'',
+    pme:[]}}
   };
   
   const security_reducer = (state = initialState, action) => {

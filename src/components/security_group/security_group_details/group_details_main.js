@@ -24,7 +24,6 @@ const filtersSelectedStyles = {
 };
 export default function GroupDetailsMain(props) {
     const groupDetails = props.rowData;
-    console.log(groupDetails);
     return (
         <div className='card grid_wrapper'>
             <InputViewSection details={groupDetails} />

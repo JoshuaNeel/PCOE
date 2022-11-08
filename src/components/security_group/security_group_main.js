@@ -24,7 +24,7 @@ const heading_styles ={
     fontSize: '22px'};
 
 export default function SecurityGroupMain(){
-    const securityGroupData = useSelector((state) => state.rule);
+    const securityGroupData = useSelector((state) => state.security_reducers);
 
     // method to render the main section based on the
     // condition either to show the summary component

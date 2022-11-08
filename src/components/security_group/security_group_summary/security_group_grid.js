@@ -14,7 +14,7 @@ import GridWrapperSection from './grid_wrapper_section';
   function SecurityGroupGridMethod(){
     // Code to render the grid for security group
     const dispatch = useDispatch();
-    const securityGroupData = useSelector((state) => state.rule);
+    const securityGroupData = useSelector((state) => state.security_reducers);
     const [state,setState] = useState();
     useEffect(() => {
         dispatch(security_group_grid_data());
