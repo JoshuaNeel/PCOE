@@ -1,7 +1,7 @@
 export const TickerDropDown = ({item, onSearch}) => {
 
     return (
-    <table>
+    <table style={{width: '100%', marginTop: '3px'}}>
         <tr>
             <th style={{backgroundColor: 'rgb(234, 239, 250)', fontWeight: 'bold', fontSize: '14px'}}>{item.group}</th>
         </tr>
@@ -15,21 +15,21 @@ export const TickerDropDown = ({item, onSearch}) => {
 export const SelectedTickers = ({values}) => {
 
     return (
-    <table>
+    <table style={{width: '100%', marginTop: '3px', marginLeft: '-15px'}}>
         <tr>
-            <th>
+            <th style={{backgroundColor: 'rgb(234, 239, 250)', fontWeight: 'bold', fontSize: '14px'}}>
                 Ticker
             </th>
-            <th>
+            <th style={{backgroundColor: 'rgb(234, 239, 250)', fontWeight: 'bold', fontSize: '14px'}}>
                 Value
             </th>
         </tr>
         {values.map((item, index) => (
             <tr>
-                <td>
+                <td style={{fontSize: '12px'}}>
                     {item.group}
                 </td>
-                <td>
+                <td style={{fontSize: '12px'}}>
                     {item.searchTerm}
                 </td>
             </tr>

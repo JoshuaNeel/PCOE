@@ -5,10 +5,12 @@ $fontSize: 16px;
 
 .navItem{
     color: $whiteColor;
-    width: 235px;
     text-align: center;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    padding: 0px;
+    margin-top: 0px;
         .navIcons {
             margin-top: 16px;
             align-items: center;
@@ -21,17 +23,16 @@ $fontSize: 16px;
             align-items: center;
             font-size: $fontSize;
             color: $whiteColor;
-            padding-top: 3px;
         }
         #navigationButton{
             align-items: center;
-            height: 88px;
+            height: 100%;
+            margin: 0px;
             border: 0;
             background-color:transparent;
             border-radius:0;
-            margin-top:-5px;
             box-shadow:none !important;
-            width: 235px;
+            width: 200px;
         }
         #navigationButton:hover{
             background-color:$highlightColor;
@@ -44,21 +45,3 @@ $fontSize: 16px;
         }
 }
 
-@media screen and (max-width: 400px) {
-    .navbarContainer{
-        height: 70;
-        margin-top: 0px;
-    }
-    .navItem{
-        height: 40;
-        .navIcons {
-            padding-top: -4px;
-            align-items: center;
-            max-width:20;
-            max-height: 10;
-        }
-        .dashboardTabs{
-            font-size: 12px;
-        }
-    }
-}

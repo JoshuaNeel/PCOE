@@ -6,6 +6,7 @@ import ButtonCompnent from "./input_elements/button";
 import { useDispatch, useSelector } from 'react-redux';
 import {tickers_view_grid_data, tickers_new_grid_data} from '../actions/security_group_actions/security_actions';
 import { TickerDropDown, SelectedTickers } from "./ticker_search_dropdown";
+import Form from 'react-bootstrap/Form';
 
 
 var data = require("./MOCK_DATA.json");
@@ -58,7 +59,6 @@ export default function TickerSearch() {
     lineHeight: "0",
     color: "white",
     border: "none",
-    marginLeft:'170px',
     outline: "none",
     width: '80px'
 };
@@ -66,10 +66,9 @@ export default function TickerSearch() {
   return (
     <main className="wrapper">
         <section className="search-inner" style={{display: 'flex', flexDirection: 'row'}}>
-          <input type="text" value={value} placeholder="Search" onChange={(e) => onChange(e)}
-           style={{ height: '25px', marginRight: '5px'}} />
+           <Form.Control type="text" value={value} placeholder="Search" onChange={(e) => onChange(e)} />
           <img src={excelImage} style={{height:'24p',width:'24px', padding: '5px'}} />
-          <span style={{fontSize:'10px', marginTop: '4px'}}>Or</span>
+          <span style={{fontSize:'10px', marginTop: '12px'}}>Or</span>
           <img src={downloadImage} style={{height:'24p',width:'24px', padding: '5px'}} />
         </section>
         <section className="dropdown">
@@ -89,7 +88,7 @@ export default function TickerSearch() {
               <TickerDropDown item={item} onSearch = {onSearch} />
             ))}
                 { (values.length > 0) && 
-                  <section style={{display: 'flex', flexDirection: 'column'}} >
+                  <section style={{display: 'flex', flexDirection: 'column', marginLeft: '0px', alignItems: 'flex-end'}} >
                     <SelectedTickers values={values} />
                     <ButtonCompnent clickEvent={onClickAdd} labelValue="Add" buttonStyles={buttonstyle}/>
                 </section>
