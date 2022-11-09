@@ -1,6 +1,6 @@
 import { SECURITY_GROUP_FLAG,
     SECURITY_GROUP_DATA,TICKERS_GRID_DATA,
-    FILTERS_SELECTED_DATA } from "../actions/actiontypes";
+    FILTERS_SELECTED_DATA, NEW_TICKERS_GRID_DATA } from "../actions/actiontypes";
   
   const initialState = {
     securityData:{flagOption: 'security_summary_page',subHeadingTitle:'',
@@ -41,6 +41,11 @@ import { SECURITY_GROUP_FLAG,
           ...state,
           filtersData:action.payload
         };
+      case NEW_TICKERS_GRID_DATA:
+        return {
+          ...state,
+          tickersData:action.payload
+        }
       default:
         return state;
     }
