@@ -1,7 +1,7 @@
 [
   {"group": "Tickers", "full_name":"GOOG"}, 
-  {"group": "Tickers", "full_name":"GOOG"}, 
-  {"group": "ISIN", "full_name":"ABC123"},
-  {"group": "ISIN", "full_name":"ABC246"}
+  {"group": "Tickers", "full_name":"AMZ"}, 
+  {"group": "ISIN", "full_name":"TLS"},
+  {"group": "ISIN", "full_name":"TSL"}
   ]
   

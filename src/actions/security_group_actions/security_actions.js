@@ -47,6 +47,21 @@ export const tickers_view_grid_data = () => {
 
     }
 }
+/* Action to maintain the data for
+table data for tickers after we 
+include or exclude some tickers
+*/
+export const tickers_new_grid_data = (updatedTickerViewData) => {
+    const newTickersData = updatedTickerViewData !== undefined? updatedTickerViewData : tickersViewData;
+    const gridPayload ={tickersDetailsHeaders,tickersViewData: newTickersData}
+    return function (dispatch, getState) {
+        const state = getState();
+        dispatch({
+            type: "NEW_TICKERS_GRID_DATA",
+            payload: gridPayload
+        })
+    }
+}
 
 /*Action to maintain the data
 for the create group filter selection display
