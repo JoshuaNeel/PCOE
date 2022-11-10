@@ -20,22 +20,22 @@ export default function PCOE_Main() {
   return (
     <>
       <Header />
-        <Navbar className="navbarContainer" style={{ marginLeft: '2px', marginRight: '2px', backgroundColor: 'rgb(2, 33, 105)', height: 90, marginTop: '-20px' }}>
-          <Navbar.Brand className="navItem securityGroup" style={{height: 90}} >
+        <Navbar className="navbarContainer" style={{ backgroundColor: 'rgb(2, 33, 105)', height: '100px', padding: '0px', margin: '0px'}}>
+          <Navbar.Brand className="navItem securityGroup" style={{marginLeft: '10%'}}>
             <Button id="navigationButton" className={activeButton === 1 && "activeBtn"} onClick={() => {navigate("/"); handleButtonClick(1);}}>
-                <img className="navIcons" src={GroupLogo} style={{height: 24, width:30}} />
+                <img className="navIcons" src={GroupLogo} style={{height: 24}} />
                 <p className="dashboardTabs">Security Group Definition</p>
             </Button>
           </Navbar.Brand> 
-          <Navbar.Brand className="navItem"  style={{height: 90}}>
+          <Navbar.Brand className="navItem" >
             <Button id="navigationButton" className={activeButton === 2 && "activeBtn"} onClick={()=> {navigate("/productSuitability"); handleButtonClick(2);}}>
-                <img className="navIcons" src={PartnerLogo} style={{height: 28, width:30, paddingTop: '1px'}} />
+                <img className="navIcons" src={PartnerLogo}  style={{height: 28}} />
                 <p className="dashboardTabs" >Product Suitability</p>
             </Button>
           </Navbar.Brand> 
-          <Navbar.Brand className="navItem" style={{height: 90}} >
+          <Navbar.Brand className="navItem">
             <Button id="navigationButton" className={activeButton === 3 && "activeBtn"} onClick={()=>{navigate("/routingDashboard"); handleButtonClick(3);}}>
-                <img className="navIcons" src={DashboardLogo} style={{height: 24, width:28}} />
+                <img className="navIcons" src={DashboardLogo} style={{height: 24}} />
                 <p className="dashboardTabs" >Routing Dashboard</p>
             </Button>
           </Navbar.Brand>
