@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
-import "./listGroupStyles.scss";
-import downloadImage from '../assets/images/download.png';
-import excelImage from '../assets/images/excel.png';
-import ButtonCompnent from "./input_elements/button";
+import downloadImage from '../../../assets/images/download.png';
+import excelImage from '../../../assets/images/excel.png';
+import ButtonCompnent from "../../input_elements/button";
 import { useDispatch, useSelector } from 'react-redux';
-import {tickers_view_grid_data, tickers_new_grid_data} from '../actions/security_group_actions/security_actions';
+import {tickers_view_grid_data, tickers_new_grid_data} from '../../../actions/security_group_actions/security_actions';
 import { TickerDropDown, SelectedTickers } from "./ticker_search_dropdown";
 import Form from 'react-bootstrap/Form';
 

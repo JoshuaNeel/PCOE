@@ -4,7 +4,7 @@ code related to the
 grid cell rendering
 */
 
-import DotComponent from "../../../common_components/dot";
+import DotComponent from "../../../common_components/listOfCountriesToDisplay/dot";
 import {  useDispatch } from "react-redux"
 import { toggle_secuirty_component }
  from '../../../actions/security_group_actions/security_actions';

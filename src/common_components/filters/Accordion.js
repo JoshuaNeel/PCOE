@@ -14,8 +14,8 @@ import {
   optionInclusion,
   marginability,
 } from "./filters_data";
-import TickerSearch from "./TickerSearch";
-import { create_group_filter_selection } from "../actions/security_group_actions/security_actions";
+import TickerSearch from "./tickerSearch/tickerSearch";
+import { create_group_filter_selection } from "../../actions/security_group_actions/security_actions";
 
 function CustomToggle({ children, handleClick }) {
   return (
