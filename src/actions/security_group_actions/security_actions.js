@@ -77,3 +77,27 @@ export const create_group_filter_selection = (filtersSelectedData) => {
 
     }
 }
+
+/* Mock apis to fetch/update data from client url*/
+export const fetch_api_data = () => {
+
+    return function (dispatch, getState) {
+      const state = getState();
+      fetch("https://jsonplaceholder.typicode.com/users")
+        .then((response) => response.json())
+        .then((json) => {
+            const dummyData = json;
+          dispatch({ type: "DUMMY_API_DATA", payload: dummyData });
+        });
+    };
+  };
+
+export const update_api_data = (data) => {
+    
+    return async function(dispatch, getState){
+        const state = getState();
+        const initialTodo = { data }
+        const response = await client.post('/fakeApi/todos', { todo: initialTodo });
+        dispatch({ type: 'UPDATE_API_DATA', payload: response.todo })    
+    }
+}

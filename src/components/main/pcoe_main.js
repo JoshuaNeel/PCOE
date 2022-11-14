@@ -10,19 +10,29 @@ import GroupLogo from '../../assets/images/SecurityGroupIcon.png';
 import PartnerLogo from '../../assets/images/ProductSuitabilityIcon.png';
 import './styles.scss';
 import SecurityGroupMain from '../security_group/security_group_main';
+import { useSelector,useDispatch } from "react-redux";
+import { toggle_secuirty_component }
+ from '../../actions/security_group_actions/security_actions';
+
+
 
 export default function PCOE_Main() {
   const navigate = useNavigate();
   const [activeButton, setActiveButton] = useState(1);
+  const dispatch = useDispatch();
   const handleButtonClick = (value) => {
     setActiveButton(value);
   };
+  const handleBakClickEvent = () =>{
+    dispatch(toggle_secuirty_component('security_summary_page',[],''))
+  }
+
   return (
     <>
       <Header />
         <Navbar className="navbarContainer" style={{ backgroundColor: 'rgb(2, 33, 105)', height: '100px', padding: '0px', margin: '0px'}}>
           <Navbar.Brand className="navItem securityGroup" style={{marginLeft: '10%'}}>
-            <Button id="navigationButton" className={activeButton === 1 && "activeBtn"} onClick={() => {navigate("/"); handleButtonClick(1);}}>
+            <Button id="navigationButton" className={activeButton === 1 && "activeBtn"} onClick={() => {handleBakClickEvent(); handleButtonClick(1);}}>
                 <img className="navIcons" src={GroupLogo} style={{height: 24}} />
                 <p className="dashboardTabs">Security Group Definition</p>
             </Button>

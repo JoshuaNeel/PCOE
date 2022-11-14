@@ -5,7 +5,7 @@ the filters wrapper of the
 create security group
 */
 
-import Accordion from "../../../common_components/Accordion";
+import Accordion from "../../../common_components/filters/Accordion";
 import DropDownComponent from "../../../common_components/input_elements/dropdown";
 import TextFieldComponent from "../../../common_components/input_elements/text_field";
 
