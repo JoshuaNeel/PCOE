@@ -16,7 +16,7 @@ const FiltersWrapper  = ()=>{
             Filters component
             <TextFieldComponent inputStyle={{height: '40px'}}
              placeholder={'Enter Group Name'} />
-            <DropDownComponent />
+            <DropDownComponent value={['value1','value2']} />
             <h2>Filters</h2>
             <Accordion  />
         </div>

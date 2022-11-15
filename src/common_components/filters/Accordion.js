@@ -119,7 +119,7 @@ const Accordian = () => {
     setCheckedProductGroupToInclude(
       new Map(checkedProductGroupToInclude.set(item, isChecked))
     );
-    setMultiSelectionFilterValue("prdctInclude", item, isChecked);
+    setMultiSelectionFilterValue("productGroupToInclude", item, isChecked);
   };
 
   const handleProductGroupToExclude = (e) => {
@@ -128,7 +128,7 @@ const Accordian = () => {
     setCheckedProductGroupToExclude(
       new Map(checkedProductGroupToExclude.set(item, isChecked))
     );
-    setMultiSelectionFilterValue("prdctExclude", item, isChecked);
+    setMultiSelectionFilterValue("productsToExclude", item, isChecked);
   };
 
   const handleL1L2 = (e) => {
@@ -186,7 +186,7 @@ const Accordian = () => {
                   <RadioButton
                     value={item.values}
                     name="countryoforigin"
-                    onChange={(e) => setSingleSelectionFilterValue(e,'countryoforigin')}
+                    onChange={(e) => setSingleSelectionFilterValue(e,'countryToInclude')}
                   />
                 )}
                 {item.name === "PME Group" && (
@@ -220,6 +220,7 @@ const Accordian = () => {
                   <RadioButton
                     value={item.values}
                     name="optionInclusion"
+                    defaultValue={filterStateObject?.optionInclusion}
                     onChange={(e) => setSingleSelectionFilterValue(e,'optionInclusion')}
                   />
                 )}
