@@ -1,0 +1,16 @@
+.equitiesTabClass{
+    /* Inactive tab */
+    .nav-pills .nav-link,.equitiesClass ul > li > button {
+        color:  rgb(117, 122, 132);
+        background-color: transparent !important;
+        border-radius: 0px !important;
+    
+    }
+    
+    /* Active tab */
+    .nav-pills .nav-link.active,.equitiesClass ul > li.active > button {
+        color: rgb(2, 33, 105) !important;
+        background-color: transparent !important;
+        border-bottom: 2px solid rgb(2, 33, 105);
+    }
+}

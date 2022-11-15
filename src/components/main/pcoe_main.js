@@ -13,6 +13,7 @@ import SecurityGroupMain from '../security_group/security_group_main';
 import { useSelector,useDispatch } from "react-redux";
 import { toggle_secuirty_component }
  from '../../actions/security_group_actions/security_actions';
+import RoutingDashboardTabs from '../routingDashboard/RoutingDashboardTabs';
 
 
 
@@ -32,7 +33,7 @@ export default function PCOE_Main() {
       <Header />
         <Navbar className="navbarContainer" style={{ backgroundColor: 'rgb(2, 33, 105)', height: '100px', padding: '0px', margin: '0px'}}>
           <Navbar.Brand className="navItem securityGroup" style={{marginLeft: '10%'}}>
-            <Button id="navigationButton" className={activeButton === 1 && "activeBtn"} onClick={() => {handleBakClickEvent(); handleButtonClick(1);}}>
+            <Button id="navigationButton" className={activeButton === 1 && "activeBtn"} onClick={() => {handleBakClickEvent();navigate("/"); handleButtonClick(1);}}>
                 <img className="navIcons" src={GroupLogo} style={{height: 24}} />
                 <p className="dashboardTabs">Security Group Definition</p>
             </Button>
@@ -44,7 +45,7 @@ export default function PCOE_Main() {
             </Button>
           </Navbar.Brand> 
           <Navbar.Brand className="navItem">
-            <Button id="navigationButton" className={activeButton === 3 && "activeBtn"} onClick={()=>{navigate("/routingDashboard"); handleButtonClick(3);}}>
+          <Button id="navigationButton" className={activeButton === 3 && "activeBtn"} onClick={()=>{navigate("/routingDashboard"); handleButtonClick(3);}}>
                 <img className="navIcons" src={DashboardLogo} style={{height: 24}} />
                 <p className="dashboardTabs" >Routing Dashboard</p>
             </Button>
@@ -52,7 +53,7 @@ export default function PCOE_Main() {
         </Navbar>
 
       <Routes>
-        <Route path="/routingDashboard" element={<RoutingDashboard />} />
+      <Route path="/routingDashboard" element={<RoutingDashboard />} />
         <Route path="/productSuitability" element={<ProductSuitability />} />
         <Route path="/" element={<SecurityGroupMain />} />
         {/* <Route path="/" element={<SecurityGroupDefinition />} /> */}
