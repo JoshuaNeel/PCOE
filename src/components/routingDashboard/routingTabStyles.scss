@@ -1,0 +1,16 @@
+.routingDashboardMainClass{
+/* Inactive tab */
+    .nav-pills .nav-link,.myClass ul > li > button {
+        color:  rgb(117, 122, 132);
+        background-color: #e4dddd !important;
+        border-radius: 0px !important;
+        width:250px;
+    }
+
+    /* Active tab */
+    .nav-pills .nav-link.active,.myClass ul > li.active > button {
+        background-color: rgb(2, 33, 105) !important;
+    }
+
+}
+
