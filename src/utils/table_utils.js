@@ -90,7 +90,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"on Hold CEF",
             "LOB":'bcs',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -101,7 +101,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -112,7 +112,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -123,7 +123,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -134,7 +134,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -145,7 +145,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -156,7 +156,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -167,7 +167,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -178,7 +178,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -189,7 +189,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -200,7 +200,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -211,7 +211,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -222,7 +222,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -233,7 +233,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -244,7 +244,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -255,7 +255,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -266,7 +266,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -277,7 +277,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -288,7 +288,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -299,7 +299,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -310,7 +310,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -321,7 +321,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -332,7 +332,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -343,7 +343,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -354,7 +354,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -365,7 +365,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -376,7 +376,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -387,7 +387,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -398,7 +398,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -409,7 +409,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -420,7 +420,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -431,7 +431,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -442,7 +442,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -453,7 +453,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -464,7 +464,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -475,7 +475,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -486,7 +486,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -497,7 +497,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -508,7 +508,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -519,7 +519,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -530,7 +530,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -541,7 +541,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -552,7 +552,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -563,7 +563,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -574,7 +574,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -585,7 +585,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],
@@ -596,7 +596,7 @@ export const SecurityGroupGridData={
         {
             "groupname":"group 1",
             "LOB":'CF2',
-            "l1-l2":"L1=1",
+            "l1l2":"L1=1",
             "countryToInclude":["US","France","UK"],
             "productGroupToInclude":"22",
             "tickersToInclude":["ABC","DEF"],

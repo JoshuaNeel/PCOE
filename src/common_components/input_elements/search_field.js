@@ -7,7 +7,7 @@ import {SecurityGroupGridData} from '../../utils/table_utils';
 import { useDispatch } from 'react-redux';
 import {security_group_grid_data} from '../../actions/security_group_actions/security_actions';
 import {gridHeaders,subHeaders} from '../../utils/createGroup_utils';
-export default function SearchFieldComponent(){
+export default function SearchFieldComponent(props){
     const tableData = SecurityGroupGridData.data;
     const dispatch = useDispatch();
     const searchInputValue = (event) =>{
@@ -25,7 +25,8 @@ export default function SearchFieldComponent(){
     }
 
     return(
-        <div className="input-group">
+        <div className="input-group"
+        style={props?.searchfiledstyle}>
         <input className="form-control py-2 mr-1 pr-5 custom-search-bar"
          type="search" placeholder="Search by group name" id="example-search-input"
          onChange={searchInputValue} />

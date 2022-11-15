@@ -51,7 +51,9 @@ export default function GroupDetailsMain(props) {
                 </Row>
                 <Row>
                     <Col xs
-                        lg={3}>Country of origin: France</Col>
+                        lg={3}>Country of origin: {
+                            groupDetails.countryToInclude
+                        }</Col>
                     <Col xs
                         lg={3}>Productgroup to include: {
                         groupDetails.productGroupToInclude

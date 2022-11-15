@@ -11,6 +11,7 @@ const ReadOnlyInput = (props) =>{
         <div className='col-6'>
          <label>{props.labelValue}</label>
         <input type='text' value={props.displayValue}
+        disabled="true"
          readOnly className="readonlyInput col-12"/>
         </div>
     );
